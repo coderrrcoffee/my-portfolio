@@ -22,7 +22,7 @@ export default function Footer() {
       <FadeIn y={20} delay={0.15} className="mt-10 flex flex-col items-center gap-6">
         <span
           className="relative inline-flex h-24 w-24 overflow-hidden rounded-full"
-          style={{ boxShadow: '0 0 0 1px rgba(255,255,255,0.15), 0 20px 40px -20px #B600A8' }}
+          style={{ boxShadow: '0 0 0 1px rgba(255,255,255,0.15), 0 24px 50px -30px rgba(0,0,0,0.9)' }}
         >
           <img src={avatar} alt="Аватар" className="h-full w-full object-cover" />
         </span>
@@ -31,13 +31,7 @@ export default function Footer() {
           href={TELEGRAM}
           target="_blank"
           rel="noopener"
-          className="rounded-full text-white font-medium uppercase tracking-widest text-xs sm:text-sm md:text-base px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 transition-opacity duration-200 hover:opacity-90 active:opacity-75"
-          style={{
-            background: 'linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)',
-            boxShadow: '0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset',
-            outline: '2px solid #E3E3E3',
-            outlineOffset: -3
-          }}
+          className="rounded-full border border-white/20 bg-white/[0.04] text-white/90 font-medium uppercase tracking-widest text-xs sm:text-sm md:text-base px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 transition-colors duration-200 hover:border-white/40 hover:bg-white/[0.08] active:bg-white/[0.06]"
         >
           Написать в Telegram
         </a>
