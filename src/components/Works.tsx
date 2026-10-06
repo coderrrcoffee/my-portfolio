@@ -169,7 +169,8 @@ export default function Works() {
           delay={0.1}
           className="mx-auto mt-6 max-w-xl text-center leading-relaxed text-white/55"
         >
-          Четыре демо-проекта в четырёх нишах и стилях — от кофейни до детейлинга.
+          Четыре проекта для локального бизнеса — кофейня, барбершоп, цветочная и детейлинг. Разные
+          ниши и настроения, один подход: понятно и по делу.
         </FadeIn>
 
         <div className="mt-20 flex flex-col gap-24 sm:gap-28 md:gap-32">

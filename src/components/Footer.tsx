@@ -16,7 +16,7 @@ export default function Footer() {
         className="hero-heading font-black uppercase leading-none tracking-tight"
         style={{ fontSize: 'clamp(2rem, 7vw, 88px)' }}
       >
-        Давайте работать
+        Есть задача?
       </FadeIn>
 
       <FadeIn y={20} delay={0.15} className="mt-10 flex flex-col items-center gap-6">
@@ -42,7 +42,7 @@ export default function Footer() {
           Написать в Telegram
         </a>
 
-        <span className="text-sm text-white/45">Открыт для проектов</span>
+        <span className="text-sm text-white/45">На связи в Telegram</span>
       </FadeIn>
 
       <FadeIn y={10} delay={0.25} className="mt-14 text-xs text-white/35">
