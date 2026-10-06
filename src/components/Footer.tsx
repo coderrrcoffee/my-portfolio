@@ -1,8 +1,15 @@
 import FadeIn from './FadeIn'
 
+const AVATAR = 'https://github.com/coderrrcoffee.png'
+const TELEGRAM = 'https://t.me/coderrrcoffee'
+
 export default function Footer() {
   return (
-    <footer id="contact" className="w-full px-5 sm:px-8 md:px-10 pt-16 pb-12 text-center" style={{ background: '#0C0C0C' }}>
+    <footer
+      id="contact"
+      className="w-full px-5 pb-12 pt-20 text-center sm:px-8 md:px-10"
+      style={{ background: '#0C0C0C', borderTop: '1px solid rgba(255,255,255,0.08)' }}
+    >
       <FadeIn
         as="h2"
         y={30}
@@ -12,10 +19,30 @@ export default function Footer() {
         Давайте работать
       </FadeIn>
 
-      <FadeIn y={20} delay={0.15} className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm uppercase tracking-widest text-white/70">
-        <a className="transition-opacity hover:opacity-100 opacity-80" href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
-        <a className="transition-opacity hover:opacity-100 opacity-80" href="mailto:hello@example.com">Email</a>
-        <a className="transition-opacity hover:opacity-100 opacity-80" href="https://github.com/coderrrcoffee" target="_blank" rel="noopener">GitHub</a>
+      <FadeIn y={20} delay={0.15} className="mt-10 flex flex-col items-center gap-6">
+        <span
+          className="relative inline-flex h-24 w-24 overflow-hidden rounded-full"
+          style={{ boxShadow: '0 0 0 1px rgba(255,255,255,0.15), 0 20px 40px -20px #B600A8' }}
+        >
+          <img src={AVATAR} alt="Аватар" className="h-full w-full object-cover" />
+        </span>
+
+        <a
+          href={TELEGRAM}
+          target="_blank"
+          rel="noopener"
+          className="rounded-full text-white font-medium uppercase tracking-widest text-xs sm:text-sm md:text-base px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 transition-opacity duration-200 hover:opacity-90 active:opacity-75"
+          style={{
+            background: 'linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)',
+            boxShadow: '0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset',
+            outline: '2px solid #E3E3E3',
+            outlineOffset: -3
+          }}
+        >
+          Написать в Telegram
+        </a>
+
+        <span className="text-sm text-white/45">Открыт для проектов</span>
       </FadeIn>
 
       <FadeIn y={10} delay={0.25} className="mt-14 text-xs text-white/35">
