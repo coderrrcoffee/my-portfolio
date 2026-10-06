@@ -56,26 +56,6 @@ const PROJECTS: Project[] = [
     accent: '#ff4a3d',
     image:
       'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=70'
-  },
-  {
-    index: '05',
-    tag: '3D-студия · видео',
-    title: 'Cast & Render',
-    desc: 'Кинематографичный одностраничник: скролл не двигает контент, а перебирает кадры фонового видео. Три панели сменяют друг друга. Один HTML-файл, без сборки.',
-    tags: ['Скролл-скраб видео', 'Один файл', 'Прелоадер'],
-    url: 'https://coderrrcoffee.github.io/cast-render/',
-    accent: '#9fb3c8',
-    gradient: 'linear-gradient(135deg, #f2f0ec 0%, #c9d3dd 100%)'
-  },
-  {
-    index: '06',
-    tag: 'React · видео',
-    title: 'Scroll Tied Video',
-    desc: 'Vite + React + TypeScript: видео, привязанное к скроллу, с фреймбуфером на WebCodecs и плавным интерполяционным скрабом.',
-    tags: ['React', 'TypeScript', 'WebCodecs', 'Tailwind'],
-    url: 'https://coderrrcoffee.github.io/scroll-tied-video/',
-    accent: '#4f7fa8',
-    gradient: 'linear-gradient(135deg, #0e1013 0%, #35586e 100%)'
   }
 ]
 
@@ -189,8 +169,7 @@ export default function Works() {
           delay={0.1}
           className="mx-auto mt-6 max-w-xl text-center leading-relaxed text-white/55"
         >
-          Шесть демо-проектов в разных нишах и стилях — от локального бизнеса до кинематографичных
-          видео-лендингов.
+          Четыре демо-проекта в четырёх нишах и стилях — от кофейни до детейлинга.
         </FadeIn>
 
         <div className="mt-20 flex flex-col gap-24 sm:gap-28 md:gap-32">

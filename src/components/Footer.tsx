@@ -1,7 +1,7 @@
 import FadeIn from './FadeIn'
+import avatar from '../assets/avatar.jpg'
 
-const AVATAR = 'https://github.com/coderrrcoffee.png'
-const TELEGRAM = 'https://t.me/coderrrcoffee'
+const TELEGRAM = 'https://t.me/codercoffee'
 
 export default function Footer() {
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
           className="relative inline-flex h-24 w-24 overflow-hidden rounded-full"
           style={{ boxShadow: '0 0 0 1px rgba(255,255,255,0.15), 0 20px 40px -20px #B600A8' }}
         >
-          <img src={AVATAR} alt="Аватар" className="h-full w-full object-cover" />
+          <img src={avatar} alt="Аватар" className="h-full w-full object-cover" />
         </span>
 
         <a
