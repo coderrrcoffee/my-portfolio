@@ -32,6 +32,10 @@ const CORNERS = [
   }
 ]
 
+/**
+ * Один символ. Держим его inline (без inline-block), чтобы браузер не переносил
+ * строки посреди слов — переносы остаются только по пробелам.
+ */
 function Char({
   char,
   index,
@@ -46,16 +50,8 @@ function Char({
   const start = Math.max(0, index / total - 0.1)
   const end = Math.min(1, index / total + 0.05)
   const opacity = useTransform(progress, [start, end], [0.2, 1])
-  const display = char === ' ' ? '\u00A0' : char
 
-  return (
-    <span style={{ position: 'relative', display: 'inline-block' }}>
-      <span style={{ opacity: 0 }} aria-hidden="true">
-        {display}
-      </span>
-      <motion.span style={{ position: 'absolute', left: 0, top: 0, opacity }}>{display}</motion.span>
-    </span>
-  )
+  return <motion.span style={{ opacity }}>{char}</motion.span>
 }
 
 export default function AboutMe() {
@@ -103,9 +99,13 @@ export default function AboutMe() {
             className="text-center font-medium leading-relaxed"
             style={{ color: '#D7E2EA', maxWidth: 560, fontSize: 'clamp(1rem, 2vw, 1.35rem)' }}
           >
-            {chars.map((c, i) => (
-              <Char key={i} char={c} index={i} total={chars.length} progress={scrollYProgress} />
-            ))}
+            {chars.map((c, i) =>
+              c === ' ' ? (
+                ' '
+              ) : (
+                <Char key={i} char={c} index={i} total={chars.length} progress={scrollYProgress} />
+              )
+            )}
           </p>
         </div>
 
